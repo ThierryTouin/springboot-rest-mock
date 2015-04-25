@@ -1,4 +1,4 @@
-package fr.touin.thierry.service.rest;
+package fr.touin.thierry.service.rest.bean;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

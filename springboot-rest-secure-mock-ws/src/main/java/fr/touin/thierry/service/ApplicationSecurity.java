@@ -1,4 +1,4 @@
-package fr.touin.thierry.service.rest;
+package fr.touin.thierry.service;
 
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.core.annotation.Order;

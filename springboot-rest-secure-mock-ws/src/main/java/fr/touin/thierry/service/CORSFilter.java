@@ -1,4 +1,4 @@
-package fr.touin.thierry.service.rest;
+package fr.touin.thierry.service;
 
 import org.springframework.stereotype.Component;  
 import org.springframework.web.filter.OncePerRequestFilter;
