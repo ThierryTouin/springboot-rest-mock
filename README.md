@@ -14,4 +14,4 @@ Pour activer ou désactiver la sécurité, faire une recherche dans le code de "
 
 curl -v --user user1:user1 -H "Accept: application/json" http://localhost:8080/rest/test
 
-test push
+test push 
