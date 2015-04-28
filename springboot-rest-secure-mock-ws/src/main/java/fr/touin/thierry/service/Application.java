@@ -10,8 +10,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @ComponentScan
 
 // SPRING_SECURITY : debut 
-@EnableAutoConfiguration(exclude = {org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class})
-//@EnableAutoConfiguration
+//@EnableAutoConfiguration(exclude = {org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class})
+@EnableAutoConfiguration
 // SPRING_SECURITY : fin 
 
 @ImportResource({ "classpath:/applicationContext.xml" })

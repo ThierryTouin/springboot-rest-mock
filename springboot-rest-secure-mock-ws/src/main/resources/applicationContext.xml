@@ -11,9 +11,7 @@
 
 
 	<!-- SPRING_SECURITY : debut -->
- 	<!-- 
 	<import resource="classpath:/spring-security.xml" />
-	-->
 	<!-- SPRING_SECURITY : fin -->
 	
 
