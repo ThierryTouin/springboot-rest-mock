@@ -8,6 +8,7 @@
     <http auto-config="true">
     	<intercept-url pattern="/**" access="ROLE_USER" />
         <http-basic></http-basic>
+        <!-- <csrf />  --> <!-- disabled security -->
         <logout />
     </http>
 
@@ -15,6 +16,8 @@
 		<authentication-provider>
 	        <user-service>            
 	            <user name="user1" password="user1" authorities="ROLE_USER" />
+	            <user name="bob1" password="bob123" authorities="ROLE_USER" />
+	            <user name="admin1" password="admin123" authorities="ROLE_USER,ROLE_ADMIN" />
 	        </user-service>
 		</authentication-provider>
 	</authentication-manager>  
