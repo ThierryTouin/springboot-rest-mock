@@ -6,6 +6,15 @@ springboot-rest-secure-mock
 
 `mvn spring-boot:run`
 
+# Mettre à jour git 
+
+`git commit .`
+
+`git push -u origin master`
+
+# Swagger UI
+http://localhost:9998/rest/swagger-ui.html
+
 # Service REST
 `http://localhost:8080/rest/test`
 `http://localhost:9999/rest/order/1`

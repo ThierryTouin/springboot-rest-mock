@@ -7,11 +7,14 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @ComponentScan
 
 // SPRING_SECURITY : debut 
 //@EnableAutoConfiguration(exclude = {org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class})
 @EnableAutoConfiguration
+@EnableSwagger2
 // SPRING_SECURITY : fin 
 
 @ImportResource({ "classpath:/applicationContext.xml" })
