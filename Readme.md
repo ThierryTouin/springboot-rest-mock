@@ -13,34 +13,35 @@ springboot-rest-secure-mock
 `git push -u origin master`
 
 # Swagger UI
-http://localhost:9998/rest/swagger-ui.html
+
+`http://localhost:9998/swagger-ui.html`
 
 # Service REST
-`http://localhost:8080/rest/test`
-`http://localhost:9999/rest/order/1`
+`http://localhost:9998/rest/test`
+`http://localhost:9998/rest/order/1`
 
 
 # Service CATS (Spring rest data)
 
-=> S'authentification avec un navigateur, pour récupérer le cookies session et le mettre dans les appels curl.
+=> S'authentification avec un navigateur, pour recuperer le cookies session et le mettre dans les appels curl.
 
-`http://localhost:9999/cats`
+`http://localhost:9998/cats`
 
-`curl -i -X POST -d '{"name":"Tata","colour":"red"}' -H 'Cookie: JSESSIONID=f06sl7o8n5szpiuahdb6yh8z' -H 'Content-Type: application/json' http://localhost:9999/cats`
+`curl -i -X POST -d '{"name":"Tata","colour":"red"}' -H 'Cookie: JSESSIONID=f06sl7o8n5szpiuahdb6yh8z' -H 'Content-Type: application/json' http://localhost:9998/cats`
 
-`curl -i -X POST -d '{"name":"Tutu","colour":"green"}' -H 'Cookie: JSESSIONID=f06sl7o8n5szpiuahdb6yh8z' -H 'Content-Type: application/json' http://localhost:9999/cats`
+`curl -i -X POST -d '{"name":"Tutu","colour":"green"}' -H 'Cookie: JSESSIONID=f06sl7o8n5szpiuahdb6yh8z' -H 'Content-Type: application/json' http://localhost:9998/cats`
 
-`curl -i -X POST -d '{"name":"Barbapapa","colour":"yellow"}' -H 'Cookie: JSESSIONID=f06sl7o8n5szpiuahdb6yh8z' -H 'Content-Type: application/json' http://localhost:9999/cats`
+`curl -i -X POST -d '{"name":"Barbapapa","colour":"yellow"}' -H 'Cookie: JSESSIONID=f06sl7o8n5szpiuahdb6yh8z' -H 'Content-Type: application/json' http://localhost:9998/cats`
 
-Pour récupérer, tous les éléments : `http://localhost:9999/cats`
+Pour recuperer, tous les elements : `http://localhost:9998/cats`
 
-Pour récupérer un élément : `http://localhost:9999/cats/1`
+Pour recuperer un elements : `http://localhost:9998/cats/1`
 
 
 
 
 # SECURISE
-Pour activer ou désactiver la sécurité, faire une recherche dans le code de "SPRING_SECURITY"
+Pour activer ou desactiver la securite, faire une recherche dans le code de "SPRING_SECURITY"
 
 `curl -v --user user1:user1 -H "Accept: application/json" http://localhost:8080/rest/test`
 
