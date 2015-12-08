@@ -16,6 +16,11 @@ springboot-rest-secure-mock
 
 `http://localhost:9998/swagger-ui.html`
 
+# Metrics
+
+`http://localhost:9998/metrics`
+
+
 # Service REST
 `http://localhost:9998/rest/test`
 `http://localhost:9998/rest/order/1`
