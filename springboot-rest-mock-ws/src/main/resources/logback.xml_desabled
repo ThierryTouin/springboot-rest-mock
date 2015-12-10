@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	
+	<property resource="application.properties" />	
+	
+    <property name="LOGS_FOLDER" value="${conf.logger.base}" />
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOGS_FOLDER}/${conf.logger.filename}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOGS_FOLDER}/${profil.log.filename}.%d{yyyyMMdd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy/MM/dd HH:mm:ss,SSS} [%thread] %-5level %logger{0} - %m %throwable{0}%n</pattern>
+        </encoder>
+    </appender>
+    
+    
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder> 
+    </appender>
+	
+    
+    <logger name="org" level="INFO" />
+    <logger name="org.dbunit" level="ERROR" />
+    <logger name="org.hibernate" level="WARN" />
+    <logger name="org.hibernate.tool.hbm2ddl" level="OFF" />
+    <logger name="org.hibernate.search" level="WARN" />
+    <logger name="org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl" level="ERROR" />
+    <logger name="org.hibernate.SQL" level="OFF" />
+    <logger name="org.springframework" level="WARN" />
+    <logger name="com.jolbox" level="ERROR" />
+    <logger name="org.springframework.aop" level="WARN" />
+    <logger name="org.springframework.transaction" level="WARN" />
+    <logger name="org.springframework.orm" level="WARN" />    
+    <logger name="org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl" level="ERROR" />
+    
+    <logger name="org" level="INFO" />
+
+    <root level="${conf.logger.level}">
+        <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT" />
+    </root>
+    
+</configuration>

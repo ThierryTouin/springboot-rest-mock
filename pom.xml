@@ -14,7 +14,7 @@
 	</parent>
 
 	<modules>
-		<module>springboot-rest-secure-mock-ws</module>
+		<module>springboot-rest-mock-ws</module>
 		<module>springboot-rest-mock-model</module>
 	</modules>
 
@@ -29,7 +29,7 @@
 		<dependencies>
 			<dependency>
 				<groupId>fr.touin.thierry.rest.mock</groupId>
-				<artifactId>springboot-rest-secure-mock-ws</artifactId>
+				<artifactId>springboot-rest-mock-ws</artifactId>
 				<version>${project.version}</version>
 			</dependency>		
 			<dependency>
