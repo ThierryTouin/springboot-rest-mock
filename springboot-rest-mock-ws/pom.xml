@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>springboot-rest-secure-mock-ws</artifactId>
+	<artifactId>springboot-rest-mock-ws</artifactId>
 
 
 	<parent>
