@@ -16,12 +16,14 @@
 	<modules>
 		<module>springboot-rest-mock-ws</module>
 		<module>springboot-rest-mock-model</module>
+		<module>springboot-rest-mock-data</module>
+		<module>springboot-rest-mock-services</module>
 	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring-boot.version>1.1.6.RELEASE</spring-boot.version>
-		<start-class>fr.touin.thierry.service.Application</start-class>
+		<start-class>fr.touin.thierry.mock.Application</start-class>
 		<swagger.version>2.2.2</swagger.version>
 	</properties>
 
@@ -37,6 +39,16 @@
 				<artifactId>springboot-rest-mock-model</artifactId>
 				<version>${project.version}</version>
 			</dependency>		
+			<dependency>
+				<groupId>fr.touin.thierry.rest.mock</groupId>
+				<artifactId>springboot-rest-mock-services</artifactId>
+				<version>${project.version}</version>
+			</dependency>		
+			<dependency>
+				<groupId>fr.touin.thierry.rest.mock</groupId>
+				<artifactId>springboot-rest-mock-data</artifactId>
+				<version>${project.version}</version>
+			</dependency>		
 			
 					
 			<!-- Swagger -->
@@ -50,7 +62,18 @@
 				<artifactId>springfox-swagger-ui</artifactId>
 				<version>${swagger.version}</version>
 			</dependency>
+			
+			
+			<dependency>
+				<groupId>postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>9.1-901.jdbc4</version>
+			</dependency>			
+			
 		</dependencies>
+		
+		
+		
 	</dependencyManagement>
 
 

@@ -11,7 +11,8 @@
     <http auto-config="true">
     	<intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
         <http-basic></http-basic>
-        <!-- <csrf />  --> <!-- disabled security -->
+        <csrf disabled="true"/>  <!-- disabled security -->
+        <!-- <csrf />--> 
         <logout />
     </http>
 

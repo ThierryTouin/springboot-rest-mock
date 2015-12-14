@@ -1,4 +1,4 @@
-package fr.touin.thierry.service;
+package fr.touin.thierry.mock;
 
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.core.annotation.Order;

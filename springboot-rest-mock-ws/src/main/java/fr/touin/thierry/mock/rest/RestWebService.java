@@ -1,4 +1,4 @@
-package fr.touin.thierry.service.rest;
+package fr.touin.thierry.mock.rest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import fr.touin.thierry.mock.bean.UserBiz;
-import fr.touin.thierry.service.rest.exception.BusinessException;
-import fr.touin.thierry.service.rest.exception.TechnicalException;
+import fr.touin.thierry.mock.rest.exception.BusinessException;
+import fr.touin.thierry.mock.rest.exception.TechnicalException;
 
 @RequestMapping("/rest")
 @RestController()

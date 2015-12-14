@@ -1,4 +1,4 @@
-package fr.touin.thierry.service.rest.data;
+package fr.touin.thierry.mock.rest.data;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

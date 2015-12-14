@@ -1,4 +1,4 @@
-package fr.touin.thierry.service.rest.exception;
+package fr.touin.thierry.mock.rest.exception;
 
 /**
  * Classe qui représente une exception fonctionnelle.

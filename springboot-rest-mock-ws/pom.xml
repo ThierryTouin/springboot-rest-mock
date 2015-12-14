@@ -29,6 +29,10 @@
 			<artifactId>springboot-rest-mock-model</artifactId>
 		</dependency>			
 		<dependency>
+			<groupId>fr.touin.thierry.rest.mock</groupId>
+			<artifactId>springboot-rest-mock-services</artifactId>
+		</dependency>			
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-logging</artifactId>
 		</dependency>

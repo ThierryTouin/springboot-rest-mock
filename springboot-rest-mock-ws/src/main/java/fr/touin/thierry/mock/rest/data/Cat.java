@@ -1,4 +1,4 @@
-package fr.touin.thierry.service.rest.data;
+package fr.touin.thierry.mock.rest.data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
