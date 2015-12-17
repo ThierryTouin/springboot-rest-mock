@@ -16,8 +16,7 @@
 	<modules>
 		<module>springboot-rest-mock-ws</module>
 		<module>springboot-rest-mock-model</module>
-		<module>springboot-rest-mock-data</module>
-		<module>springboot-rest-mock-services</module>
+		<module>springboot-rest-mock-db</module>
 	</modules>
 
 	<properties>
@@ -33,24 +32,20 @@
 				<groupId>fr.touin.thierry.rest.mock</groupId>
 				<artifactId>springboot-rest-mock-ws</artifactId>
 				<version>${project.version}</version>
-			</dependency>		
+			</dependency>
 			<dependency>
 				<groupId>fr.touin.thierry.rest.mock</groupId>
 				<artifactId>springboot-rest-mock-model</artifactId>
 				<version>${project.version}</version>
-			</dependency>		
+			</dependency>
 			<dependency>
 				<groupId>fr.touin.thierry.rest.mock</groupId>
-				<artifactId>springboot-rest-mock-services</artifactId>
+				<artifactId>springboot-rest-mock-db</artifactId>
 				<version>${project.version}</version>
-			</dependency>		
-			<dependency>
-				<groupId>fr.touin.thierry.rest.mock</groupId>
-				<artifactId>springboot-rest-mock-data</artifactId>
-				<version>${project.version}</version>
-			</dependency>		
-			
-					
+			</dependency>
+
+
+		    
 			<!-- Swagger -->
 			<dependency>
 				<groupId>io.springfox</groupId>
@@ -62,20 +57,45 @@
 				<artifactId>springfox-swagger-ui</artifactId>
 				<version>${swagger.version}</version>
 			</dependency>
-			
-			
+
+
 			<dependency>
 				<groupId>postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>9.1-901.jdbc4</version>
-			</dependency>			
-			
+			</dependency>
+
 		</dependencies>
-		
-		
-		
+
+
+
 	</dependencyManagement>
 
-
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
+            </plugin>
+			<!-- 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <useSystemClassLoader>false</useSystemClassLoader>
+                </configuration>
+            </plugin>
+			-->
+        </plugins>
+        <resources>
+              <resource>
+                  <directory>src/main/resources</directory>
+                  <filtering>true</filtering>
+              </resource>
+        </resources>        
+    </build>
+	
 </project>

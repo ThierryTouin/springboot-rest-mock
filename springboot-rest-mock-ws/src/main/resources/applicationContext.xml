@@ -20,8 +20,12 @@
 	<import resource="classpath:/spring-security.xml" />
 	<!-- SPRING_SECURITY : fin -->
 	
-	<!-- Enables swgger ui-->
+	<!-- Enables sawgger ui-->
     <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/"/>
     <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
 
+	<import resource="classpath:**/spring-databaseContext.xml" /> 
+	<!-- 
+ 	-->
+ 	
 </beans>

@@ -6,7 +6,7 @@ springboot-rest-secure-mock
 
 `mvn spring-boot:run`
 
-# Mettre à jour git 
+# Mettre ï¿½ jour git 
 
 `git commit .`
 
@@ -50,6 +50,7 @@ Pour activer ou desactiver la securite, faire une recherche dans le code de "SPR
 
 `curl -v --user user1:user1 -H "Accept: application/json" http://localhost:8080/rest/test`
 
-
+# Console H2
+`http://localhost:9998/h2-console`
 
 
