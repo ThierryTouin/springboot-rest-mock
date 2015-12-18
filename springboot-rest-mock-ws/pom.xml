@@ -22,7 +22,7 @@
 		</dependency>			
 		<dependency>
 			<groupId>fr.touin.thierry.rest.mock</groupId>
-			<artifactId>springboot-rest-mock-db</artifactId>
+			<artifactId>springboot-rest-mock-biz</artifactId>
 		</dependency>			
 	
 	

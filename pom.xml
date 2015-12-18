@@ -17,6 +17,7 @@
 		<module>springboot-rest-mock-ws</module>
 		<module>springboot-rest-mock-model</module>
 		<module>springboot-rest-mock-db</module>
+		<module>springboot-rest-mock-biz</module>
 	</modules>
 
 	<properties>
@@ -28,6 +29,8 @@
 
 	<dependencyManagement>
 		<dependencies>
+		
+			<!-- My module -->	
 			<dependency>
 				<groupId>fr.touin.thierry.rest.mock</groupId>
 				<artifactId>springboot-rest-mock-ws</artifactId>
@@ -41,6 +44,11 @@
 			<dependency>
 				<groupId>fr.touin.thierry.rest.mock</groupId>
 				<artifactId>springboot-rest-mock-db</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.touin.thierry.rest.mock</groupId>
+				<artifactId>springboot-rest-mock-biz</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
